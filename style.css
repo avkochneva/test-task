@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "Europe";
+  src: url(fonts/Europe.ttf);
+}
+
+body {
+  padding-top: 8px;
+  background-color: white;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1002px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top {
+  padding-top: 13px;
+}
+
+.header-top__phone {
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+.header-top__phone a {
+  display: block;
+  font-family: "Europe";
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(235, 80, 23);
+}
+
+.menu {
+  padding-top: 3px;
+}
+
+.intro {
+  background: rgba(0, 0, 0, 1);
+}
+
+.intro a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Arial";
+}
+
+.intro a:hover {
+  background-color: rgb(235, 80, 23);
+  transition: background-color 0.3s ease;
+}
+
+.navbar {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.navbar li {
+  position: relative;
+  display: inline-block;
+  line-height: 100%;
+  flex: auto;
+  text-align: center;
+}
+
+.navbar li a {
+  padding: 15px 0;
+  display: inline-block;
+  width: 100%;
+  transition: 0.3s all;
+}
+
+.navbar li + li {
+  border-left: 1px solid #eb5e3a;
+}
+
+.navbar li + li::before {
+  border-left: 1px solid rgb(235, 80, 23);
+  height: 45px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+  z-index: 1000;
+}
+
+.section_breadcrums {
+  padding-top: 12px;
+}
+
+.breadcrums {
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb(35, 31, 32);
+  list-style: none;
+  padding-left: 20px;
+}
+
+.breadcrums a {
+  color: rgb(35, 31, 32);
+  text-decoration: underline;
+  margin-right: 8px;
+}
+
+.breadcrums li {
+  position: relative;
+  display: inline-block;
+}
+
+.breadcrums li + li::before {
+  content: "-";
+  position: absolute;
+  left: -9px;
+}
+
+.breadcrums-current {
+  text-decoration: none;
+}
+
+.calculate_form {
+  padding-top: 11px;
+}
+
+.calculate {
+  background-color: rgb(234, 239, 243, 0.4);
+  height: 378px;
+  width: 650px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.nameform {
+  padding-top: 12px;
+  padding-left: 96px;
+  padding-bottom: 15px;
+}
+
+.nameform a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Arial";
+  color: rgb(235, 80, 23);
+  z-index: 3000;
+}
+
+/* .information_calculate {
+  display: flex;
+  flex-direction: column;
+  padding-top: 14px;
+} */
+
+.inform-string {
+  width: 650px;
+  height: 45px;
+  display: flex;
+}
+
+.text-information {
+  width: 192px;
+  text-align: right;
+}
+
+.text-information p {
+  font-size: 14px;
+  font-family: "Arial";
+  color: rgb(0, 0, 0);
+}
+
+.input-information {
+  margin-left: 30px;
+}
+
+.input-information input {
+  width: 130px;
+  height: 24px;
+  margin-top: 10px;
+}
+
+.choiceform {
+  display: flex;
+  height: 24px;
+  width: 88px;
+  margin-top: 10px;
+}
+
+.input-information .choiceform input {
+  font-size: 14px;
+  font-family: "Arial";
+  color: rgb(0, 0, 0);
+  height: 10px;
+  margin-top: 4px;
+}
+
+.term {
+  margin-top: 15px;
+}
+
+.end-result {
+  margin-left: 24px;
+  margin-top: 13px;
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Arial";
+  color: rgb(57, 83, 6);
+  background-color: #b7f47b;
+  background-image: linear-gradient(
+    0deg,
+    #75bf2b 10%,
+    #8ee736 50%,
+    #b7f47b 100%
+  );
+}
+
+.all-result {
+  display: flex;
+}
+
+.text-result {
+  font-size: 12px;
+  font-family: "Arial";
+  margin-top: 25px;
+  padding-left: 25px;
+  width: 3000px;
+}
+
+.footer {
+  margin-bottom: 0;
+}
+
+.footer-menu {
+  padding-left: 33px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+}
+
+.footer-menu li {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb(255, 255, 255);
+  flex: 1 0 auto;
+  padding-left: 28px;
+  text-decoration: underline;
+}
